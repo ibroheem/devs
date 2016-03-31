@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1408913736 source:/home/ibrahim/usr/devs/cpp/utils/header_guard/main.cpp
+	"main.h"
+	<vector>
+
+1408913766 /home/ibrahim/usr/devs/cpp/utils/header_guard/main.h
+	<fstream>
+	<algorithm>
+	"macros.h"
+	"typedefs.h"
+	"io.h"
+
+1409072041 source:/home/Ibrahim/usr/devs/cpp/utils/header_guard/main.cpp
+	"main.h"
+
+1409087340 /home/Ibrahim/usr/devs/cpp/utils/header_guard/main.h
+	<fstream>
+	<algorithm>
+	"algorithm.h"
+	"io.h"
+	"string_operations.h"
+
+1411545792 source:/home/ibroheem/usr/devs/cpp/utils/header_guard/main.cpp
+	"main.h"
+
+1427817133 /home/ibroheem/usr/devs/cpp/utils/header_guard/main.h
+	<fstream>
+	<algorithm>
+	"mib/algorithm.h"
+	"mib/io.h"
+	"mib/string_operations.h"
+
+1409062527 /home/ibroheem/usr/include/mib/algorithm.h
+
+1411992722 /home/ibroheem/usr/include/mib/io.h
+	<iostream>
+	"macros.h"
+	"typedefs.h"
+
+1412120998 /home/ibroheem/usr/include/mib/macros.h
+	<typeinfo>
+
+1412119421 /home/ibroheem/usr/include/mib/typedefs.h
+
+1411996480 /home/ibroheem/usr/include/mib/string_operations.h
+
+1456655952 source:d:\usr\devs\cpp\utils\header_guard\main.cpp
+	<mib/io.h>
+	"main.h"
+
+1456656711 d:\usr\devs\cpp\utils\header_guard\main.h
+	<fstream>
+	<algorithm>
+	"mib/algorithm.h"
+	"mib/io.h"
+	"mib/string_operations.h"
+
