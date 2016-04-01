@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A975FBC4-F7DD-4D40-B5AC-6676035CD0F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CrimeInvestigator.My.MyApplication</StartupObject>
+    <RootNamespace>CrimeInvestigator</RootNamespace>
+    <AssemblyName>CrimeInvestigator</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CrimeInvestigator.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CrimeInvestigator.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Griaule\GrFinger 4.2\samples\Visual Basic.NET 2005\GrFingerX\bin\stdole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBClass.vb" />
+    <Compile Include="NewCriminalRecord.Designer.vb">
+      <DependentUpon>NewCriminalRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewCriminalRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullRecs.Designer.vb">
+      <DependentUpon>FullRecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FullRecs.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HelpPage.Designer.vb">
+      <DependentUpon>HelpPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HelpPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.vb">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalChk.Designer.vb">
+      <DependentUpon>LocalChk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocalChk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OnlineCheck.Designer.vb">
+      <DependentUpon>OnlineCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineCheck.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Util.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NewCriminalRecord.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewCriminalRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FullRecs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FullRecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HelpPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalChk.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocalChk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OnlineCheck.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxGrFingerXLib">
+      <Guid>{A9995C7C-77BF-4E27-B581-A4B5BBD90E50}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="GrFingerXLib">
+      <Guid>{A9995C7C-77BF-4E27-B581-A4B5BBD90E50}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
