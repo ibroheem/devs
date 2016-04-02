@@ -1,5 +1,5 @@
-#ifndef HEADER_DC7527D187C1340
-#define HEADER_DC7527D187C1340
+#ifndef CONVERTER_H
+#define CONVERTER_H
 
 #include <pugi/pugixml.hpp>
 #include <string>
