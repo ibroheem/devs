@@ -1,8 +1,8 @@
-A sqlite database  to xml converter
+## A sqlite database  to xml converter
 
-Build:
-   Prerequisites:
-    - pugixml
-    - https://github.com/ibroheem/include/tree/master/mib/string_operations.h
-    - https://github.com/ibroheem/include/blob/master/mib/pugi/operations.h
-    - Qt libraries
+Build:<br />
+   Prerequisites:<br />
+    - pugixml <br />
+    - https://github.com/ibroheem/include/tree/master/mib/string_operations.h <br />
+    - https://github.com/ibroheem/include/blob/master/mib/pugi/operations.h <br />
+    - Qt libraries <br />
