@@ -1,1 +1,1 @@
-Personal Projects are containde in this Repo
+Personal Projects are contained in this Repo
