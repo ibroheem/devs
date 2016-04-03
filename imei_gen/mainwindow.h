@@ -23,6 +23,7 @@ QString load_file(const QString &fl)
    return tmp;
 }
 
+
 class MainWindow : public QMainWindow
 {
    public:
