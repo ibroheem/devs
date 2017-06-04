@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="rest" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc_6xx_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Debug/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=1" />
+				</Compiler>
+				<ExtraCommands>
+					<Add after="exec Debug/rest" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="Release/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=1" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="exec Release/rest" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug-build">
+				<Option output="Debug/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release-build">
+				<Option output="Release/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=0" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Debug-static">
+				<Option output="Release/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=0" />
+				</Compiler>
+				<Linker>
+					<Add option="-static" />
+					<Add option="-static-libstdc++ -static-libgcc -static  -ldl -lssl" />
+					<Add option="-lcrypto -lz -lexpat -lutil -lfmt" />
+					<Add option="-lPocoNet -lPocoUtil -lPocoNetSSL" />
+					<Add option="-lPocoCrypto -lPocoXML -lPocoJSON" />
+					<Add option="-lPocoFoundation" />
+					<Add option="/usr/lib/x86_64-linux-gnu/libpthread.a" />
+					<Add option="/usr/lib/x86_64-linux-gnu/librt.a" />
+					<Add directory="/home/ibroheem/usr/local/lib/static" />
+				</Linker>
+			</Target>
+			<Target title="Release-static">
+				<Option output="Release/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=0" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add option="-static-libstdc++ -static-libgcc -static  -ldl -lssl" />
+					<Add option="-lcrypto -lz -lexpat -lutil -lfmt" />
+					<Add option="-lPocoNet -lPocoUtil -lPocoNetSSL" />
+					<Add option="-lPocoCrypto -lPocoXML -lPocoJSON" />
+					<Add option="-lPocoFoundation" />
+					<Add option="/usr/lib/x86_64-linux-gnu/libpthread.a" />
+					<Add option="/usr/lib/x86_64-linux-gnu/librt.a" />
+					<Add directory="/home/ibroheem/usr/local/lib/static" />
+				</Linker>
+			</Target>
+			<Target title="Release-ASAN">
+				<Option output="Release/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_492_compiler" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-fsanitize=address" />
+					<Add option="-D_GLIBCXX_USE_CXX11_ABI=0" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lasan" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="exec Release/rest" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Debug-gcc6">
+				<Option output="Debug-gcc6/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug-gcc6/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_6xx_compiler" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release-gcc6">
+				<Option output="Release-gcc6/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release-gcc6/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_6xx_compiler" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++1y" />
+					<Add option="-fPIC" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="exec Release-gcc6/rest" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release-gcc6-build">
+				<Option output="Release-gcc6/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release-gcc6/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_6xx_compiler" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++1y" />
+					<Add option="-fPIC" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Debug-gcc6-static">
+				<Option output="Debug-gcc6/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug-gcc6/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_6xx_compiler" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static" />
+					<Add option="-static-libstdc++ -static-libgcc -static  -ldl -lssl" />
+					<Add option="-lcrypto -lz -lexpat -lutil -lfmt" />
+					<Add option="-lPocoNet -lPocoUtil -lPocoNetSSL" />
+					<Add option="-lPocoCrypto -lPocoXML -lPocoJSON" />
+					<Add option="-lPocoFoundation" />
+					<Add option="/usr/lib/x86_64-linux-gnu/libpthread.a" />
+					<Add option="/usr/lib/x86_64-linux-gnu/librt.a" />
+					<Add directory="/home/ibroheem/usr/local/lib/static" />
+				</Linker>
+			</Target>
+			<Target title="Release-gcc6-static">
+				<Option output="Release-gcc6/rest" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release-gcc6/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc_6xx_compiler" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Option projectIncludeDirsRelation="2" />
+				<Option projectLibDirsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-static" />
+					<Add option="-static-libstdc++ -static-libgcc -static  -ldl -lssl" />
+					<Add option="-lcrypto -lz -lexpat -lutil -lfmt" />
+					<Add option="-lPocoNet -lPocoUtil -lPocoNetSSL" />
+					<Add option="-lPocoCrypto -lPocoXML -lPocoJSON" />
+					<Add option="-lPocoFoundation" />
+					<Add option="/usr/lib/x86_64-linux-gnu/libpthread.a" />
+					<Add option="/usr/lib/x86_64-linux-gnu/librt.a" />
+					<Add directory="/home/ibroheem/usr/local/lib/static" />
+				</Linker>
+			</Target>
+			<Environment>
+				<Variable name="fmt" value="/home/ibroheem/usr/local/lib/libfmt.a" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fPIC" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-lPocoFoundation -lPocoNet -lPocoUtil" />
+			<Add library="fmt" />
+		</Linker>
+		<Unit filename="activation.cpp" />
+		<Unit filename="activation.h" />
+		<Unit filename="data/clients" />
+		<Unit filename="junk" />
+		<Unit filename="rest.h" />
+		<Unit filename="resthandler.cpp" />
+		<Unit filename="resthandler.h" />
+		<Unit filename="server.cpp" />
+		<Unit filename="server.h" />
+		<Unit filename="settings.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

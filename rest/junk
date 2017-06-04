@@ -1,0 +1,17 @@
+
+fmt::print("_clients[id]:\t{}\n_clients[code]:\t{}\n_clients[agents]:\t{}\n",
+                       _clients["id"].GetString(),
+                       _clients["code"].GetString(),
+                       _clients["agents"].IsArray());
+
+               fmt::print("\tagent{}: \n\t\tid:\t{}\n\t\timei:\t{}\n",
+                          agents,
+                          ag1.id(),
+                          ag1.imei());
+
+            fmt::print("Client {}\n", cl.id());
+
+
+         fmt::print("clients:\t{}\nagents :\t{}\n",
+                    m_clients.size(),
+                    get_client(0).size());

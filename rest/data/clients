@@ -1,0 +1,48 @@
+{
+	"clients" : [
+		{
+         "id": "POS/CL/1",
+			"code": "POS9111",
+			"name": "Client 1",
+			"count": 2,
+			"capacity": 100,
+			"registered": true,
+			"agents" : [
+				{
+               "id": "POS/CL/1/AG/1",
+               "imei": "844368987756654",
+					"name": "Client.Agent.1",
+					"pin" :	"1234"
+				},
+				{
+               "id": "POS/CL/1/AG/2",
+               "imei": "844368987665435",
+					"name": "Client.Agent.II",
+					"pin" :	"1234"
+				}
+			]
+		},
+		{
+         "id": "POS/CL/2",
+			"name": "Client 2",
+			"code":	"POS9112",
+			"count": 2,
+			"capacity": 40,
+			"registered": false,
+			"agents" : [
+				{
+               "id": "POS/CL/2/AG/1",
+               "imei": "844368987665437",
+					"name": "ClientII.Agent.1",
+					"pin" :	"1234"
+				},
+				{
+               "id": "POS/CL/2/AG/2",
+               "imei": "844368987665348",
+					"name": "ClientII.Agent.II",
+					"pin" :	"1234"
+				}
+			]
+		}
+	]
+}

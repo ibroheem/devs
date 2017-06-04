@@ -1,0 +1,101 @@
+# depslib dependency file v1.0
+1485676230 source:/media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/main.cpp
+	<iostream>
+	<fmt/format.h>
+	"server.h"
+
+1486845745 /media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/server.h
+	<iostream>
+	<Poco/Net/SocketStream.h>
+	<Poco/Net/StreamSocket.h>
+	<Poco/Util/ServerApplication.h>
+	<Poco/Net/HTTPServer.h>
+	<Poco/Net/HTTPRequestHandler.h>
+	<Poco/Net/HTTPServerRequest.h>
+	<Poco/Net/HTTPServerResponse.h>
+	<Poco/URI.h>
+	<mib/Poco/net>
+	"resthandler.h"
+
+1485926622 /media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/rest.h
+	"settings.h"
+	"activation.h"
+
+1486465532 /media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/settings.h
+	<mib/typedefs.h>
+	<nlohmann/json-2.1.0.hpp>
+	<fstream>
+
+1488973893 source:/media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/server.cpp
+	"server.h"
+	"activation.h"
+
+1488976277 /media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/activation.h
+	<fmt/format.h>
+	<rapidjson/document.h>
+	<fstream>
+	<mib/typedefs.h>
+
+1488975358 source:/media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/resthandler.cpp
+	"resthandler.h"
+	<Poco/StreamCopier.h>
+	<mib/timer>
+	<fmt/ostream.h>
+
+1486844144 /media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/resthandler.h
+	<Poco/Net/HTTPRequestHandler.h>
+	<Poco/Net/HTTPServerRequest.h>
+	<Poco/Net/HTTPServerResponse.h>
+	<mib/timer>
+	<mib/typedefs.h>
+	<fmt/format.h>
+	"activation.h"
+
+1488976254 source:/media/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/activation.cpp
+	"activation.h"
+	<rapidjson/stringbuffer.h>
+	<rapidjson/prettywriter.h>
+
+1487096293 source:/run/media/ibroheem/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/activation.cpp
+	"activation.h"
+	<rapidjson/stringbuffer.h>
+	<rapidjson/prettywriter.h>
+
+1487064138 /run/media/ibroheem/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/activation.h
+	<fmt/format.h>
+	<rapidjson/document.h>
+	<fstream>
+	<mib/typedefs.h>
+
+1487177366 source:/run/media/ibroheem/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/resthandler.cpp
+	"resthandler.h"
+	<Poco/StreamCopier.h>
+	<mib/timer>
+	<fmt/ostream.h>
+
+1486844144 /run/media/ibroheem/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/resthandler.h
+	<Poco/Net/HTTPRequestHandler.h>
+	<Poco/Net/HTTPServerRequest.h>
+	<Poco/Net/HTTPServerResponse.h>
+	<mib/timer>
+	<mib/typedefs.h>
+	<fmt/format.h>
+	"activation.h"
+
+1487002891 source:/run/media/ibroheem/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/server.cpp
+	"server.h"
+	"activation.h"
+
+1486845745 /run/media/ibroheem/60128FC5128F9EA2/usr/devs/cpp/lib/POCO/rest/server.h
+	<iostream>
+	<Poco/Net/SocketStream.h>
+	<Poco/Net/StreamSocket.h>
+	<Poco/Util/ServerApplication.h>
+	<Poco/Net/HTTPServer.h>
+	<Poco/Net/HTTPRequestHandler.h>
+	<Poco/Net/HTTPServerRequest.h>
+	<Poco/Net/HTTPServerResponse.h>
+	<Poco/URI.h>
+	<mib/Poco/net>
+	"resthandler.h"
+

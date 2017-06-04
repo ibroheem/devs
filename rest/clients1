@@ -1,0 +1,36 @@
+{ 
+	"clients" : [
+		{
+			"name": "Client 1",
+			"code":	"POS9111", ///* Message Auth Code should be used in Live builds */
+			"agent_count": 2,
+			"max_agents": 100,
+			"agents" : [
+				{ 
+					"name": "Client.Agent.1", 
+					"pin" :	"1234"  ///* Message Auth Code should DEFINITELY be used in Live builds */
+				},
+				{ 
+					"name": "Client.Agent.II", 
+					"pin" :	"1234"  ///* Message Auth Code should DEFINITELY be used in Live builds */
+				}
+			]
+		},
+		{
+			"name": "Client 2",
+			"code":	"POS9112", ///* Message Auth Code should be used in Live builds */
+			"agents": 2,
+			"max_agents": 100,
+			"agents" : [
+				{ 
+					"name": "Client.Agent.1", 
+					"pin" :	"1234"  ///* Message Auth Code should DEFINITELY be used in Live builds */
+				},
+				{ 
+					"name": "Client.Agent.II", 
+					"pin" :	"1234"  ///* Message Auth Code should DEFINITELY be used in Live builds */
+				}
+			]
+		}
+	]
+} 
